@@ -1,0 +1,14 @@
+create table users(userid integer not null distkey sortkey,
+                   username char(8));
+
+create table venue(venueid smallint not null distkey sortkey,
+venuename varchar(100));
+
+copy users from '<s3 url>'
+credentials 'aws_iam_role=<arn of iam role>'
+delimeter '|' region '<ap-south-1';
+
+copy venue from '<s3 url>'
+credentials 'aws_iam_role=<arn of iam role>'
+delimeter '|' region '<ap-south-1';
+
