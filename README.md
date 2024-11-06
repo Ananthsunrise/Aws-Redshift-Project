@@ -1,4 +1,4 @@
-# Aws-Redshift-Project
+# Aws-Redshift-Project 
 
 It is a datawarehouse.
 It is used for analysis.
